@@ -63,7 +63,3 @@ button {
   letter-spacing: 0.64px;
 }
 
-button:hover,
-button:focus {
-  background: #6c8cff;
-}

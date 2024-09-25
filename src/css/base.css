@@ -35,3 +35,8 @@ li:hover,
 li:focus {
   color: #6c8cff;
 }
+
+button:hover,
+button:focus {
+  background: #6c8cff;
+}
