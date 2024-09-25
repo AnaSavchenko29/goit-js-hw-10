@@ -26,8 +26,9 @@ button {
   cursor: pointer;
 }
 
-button:hover, button:focus{
-  background: #6885ed
+button:hover,
+button:focus {
+  background: #6c8cff;
 }
 
 button:disabled {
