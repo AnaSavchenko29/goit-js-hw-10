@@ -46,7 +46,7 @@ radioBtnsEl.forEach(btn => {
 function handleFormSubmit(event) {
   event.preventDefault();
 
-  const delay = formEl.elements.delay.value;
+  const delay = +formEl.elements.delay.value;
   const radioValue = formEl.elements.state.value;
 
   createPromise(delay, radioValue)
@@ -68,6 +68,8 @@ formEl.addEventListener('submit', handleFormSubmit);
 
 function createPromise(delay, state) {
   return new Promise((res, rej) => {
-    state === 'fulfilled' ? res(delay) : rej(delay);
+    setTimeout(() => {
+      state === 'fulfilled' ? res(delay) : rej(delay);
+    }, delay);
   });
 }
